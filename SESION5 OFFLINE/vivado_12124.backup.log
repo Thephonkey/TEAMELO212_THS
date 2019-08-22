@@ -1,0 +1,1081 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May  7 11:33:10 2019
+# Process ID: 12124
+# Current directory: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9532 C:\Users\ThePhonkey\Desktop\ELO211\SESION5 OFFLINE\SESION5 OFFLINE.xpr
+# Log file: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/vivado.log
+# Journal file: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 670.418 ; gain = 85.289
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May  7 11:34:12 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May  7 11:40:26 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ThePhonkey/Desktop/ELO211/SESION5 -notrace
+couldn't read file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue May  7 11:49:01 2019...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 734.293 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 768.156 ; gain = 33.863
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 11:53:50 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 772.891 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 11:58:07 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 772.891 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 11:59:14 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 772.891 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 12:26:37 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 775.867 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 12:28:58 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 776.863 ; gain = 0.000
+file mkdir C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1
+file mkdir C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1
+file mkdir C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new
+file mkdir C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new
+file mkdir C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new
+file mkdir C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new
+file mkdir C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1
+file mkdir {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new}
+close [ open {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc}}
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 12:55:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 4 for port 'light' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:52]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 791.758 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 12:58:26 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 791.758 ; gain = 0.000
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 13:00:36 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 791.758 ; gain = 0.000
+launch_simulation -mode post-synthesis -type functional
+INFO: [Vivado 12-5682] Launching post-synthesis functional simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/synth/func/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1064.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1212.652 ; gain = 420.895
+INFO: [SIM-utils-24] Writing simulation netlist file for design 'synth_1'...
+INFO: [SIM-utils-25] write_verilog -mode funcsim -nolib -force -file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/synth/func/xsim/SIMPRO_func_synth.v"
+INFO: [SIM-utils-36] Netlist generated:C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/synth/func/xsim/SIMPRO_func_synth.v
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/synth/func/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/synth/func/xsim/SIMPRO_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-311] analyzing module TOPDESIGN
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'ALU' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv:3]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'DISTURN' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:3]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'TIMEDIV' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv:3]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/synth/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot SIMPRO_func_synth xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_func_synth
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/ThePhonkey/Desktop/ELO211/SESION5 -notrace
+couldn't read file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Tue May  7 13:04:21 2019...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/synth/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_func_synth -key {Post-Synthesis:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_func_synth' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:43 ; elapsed = 00:00:23 . Memory (MB): peak = 1303.770 ; gain = 512.012
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: TOPDESIGN
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1850.555 ; gain = 95.859
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOPDESIGN' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TIMEDIV' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv:3]
+	Parameter speriod bound to: 3 - type: integer 
+	Parameter delaywidth bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'TIMEDIV' (1#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv:3]
+	Parameter NB bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (2#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'CHOUTALU' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'CHOUTALU' (3#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TOFOUR' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TOFOUR' (4#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'DISTURN' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:3]
+	Parameter gates bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DISTURN' (5#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoS' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:4]
+	Parameter NB bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoS' (6#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'SHOWLED' (7#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:3]
+WARNING: [Synth 8-689] width (16) of port connection 'ins' does not match port width (8) of module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:56]
+WARNING: [Synth 8-689] width (16) of port connection 'show' does not match port width (8) of module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:56]
+WARNING: [Synth 8-3848] Net up in module/entity TOPDESIGN does not have driver. [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:40]
+WARNING: [Synth 8-3848] Net down in module/entity TOPDESIGN does not have driver. [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:40]
+WARNING: [Synth 8-3848] Net left in module/entity TOPDESIGN does not have driver. [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:40]
+WARNING: [Synth 8-3848] Net right in module/entity TOPDESIGN does not have driver. [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'TOPDESIGN' (8#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:3]
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[8] driven by constant 0
+WARNING: [Synth 8-3331] design TOPDESIGN has unconnected port BTNC
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1893.398 ; gain = 138.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin test2:UP to constant 0 [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:40]
+WARNING: [Synth 8-3295] tying undriven pin test2:DOWN to constant 0 [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:40]
+WARNING: [Synth 8-3295] tying undriven pin test2:LEFT to constant 0 [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:40]
+WARNING: [Synth 8-3295] tying undriven pin test2:RIGHT to constant 0 [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:40]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1893.398 ; gain = 138.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1893.398 ; gain = 138.703
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2028.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2028.793 ; gain = 274.098
+21 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2028.793 ; gain = 274.156
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2104.797 ; gain = 9.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOPDESIGN' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TIMEDIV' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv:3]
+	Parameter speriod bound to: 3 - type: integer 
+	Parameter delaywidth bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'TIMEDIV' (1#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv:3]
+	Parameter NB bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (2#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'CHOUTALU' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'CHOUTALU' (3#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TOFOUR' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TOFOUR' (4#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'DISTURN' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:3]
+	Parameter gates bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DISTURN' (5#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoS' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:4]
+	Parameter NB bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoS' (6#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'SHOWLED' (7#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:3]
+WARNING: [Synth 8-689] width (16) of port connection 'ins' does not match port width (8) of module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:56]
+WARNING: [Synth 8-689] width (16) of port connection 'show' does not match port width (8) of module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'TOPDESIGN' (8#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:3]
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[8] driven by constant 0
+WARNING: [Synth 8-3331] design TOPDESIGN has unconnected port BTNC
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2106.973 ; gain = 11.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2106.973 ; gain = 11.410
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2106.973 ; gain = 11.410
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 2195.277 ; gain = 99.922
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2288.348 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'TOPDESIGN' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TIMEDIV' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv:3]
+	Parameter speriod bound to: 3 - type: integer 
+	Parameter delaywidth bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'TIMEDIV' (1#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv:3]
+	Parameter NB bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (2#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'CHOUTALU' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'CHOUTALU' (3#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'TOFOUR' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'TOFOUR' (4#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'DISTURN' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:3]
+	Parameter gates bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'DISTURN' (5#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'BCDtoS' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:4]
+	Parameter NB bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'BCDtoS' (6#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'SHOWLED' (7#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:3]
+WARNING: [Synth 8-689] width (16) of port connection 'ins' does not match port width (8) of module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:56]
+WARNING: [Synth 8-689] width (16) of port connection 'show' does not match port width (8) of module 'SHOWLED' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'TOPDESIGN' (8#1) [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPDESIGN.sv:3]
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[15] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[14] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[13] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[12] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[11] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[10] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[9] driven by constant 0
+WARNING: [Synth 8-3917] design TOPDESIGN has port LED[8] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2292.566 ; gain = 4.219
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2293.801 ; gain = 5.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2293.801 ; gain = 5.453
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 8 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc]
+Finished Parsing XDC File [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/constrs_1/new/Nexys4DDR.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2655.555 ; gain = 367.207
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 13:25:29 2019...

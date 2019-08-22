@@ -1,0 +1,173 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 4708
+License: Customer
+
+Current time: 	Wed Aug 21 01:49:02 CLST 2019
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 120
+Available screens: 1
+Available disk space: 24 GB
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ThePhonkey
+User home directory: C:/Users/ThePhonkey
+User working directory: C:/Users/ThePhonkey/Desktop/ELO212/SESION7
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/ThePhonkey/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/ThePhonkey/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/ThePhonkey/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/ThePhonkey/Desktop/ELO212/SESION7/vivado.log
+Vivado journal file location: 	C:/Users/ThePhonkey/Desktop/ELO212/SESION7/vivado.jou
+Engine tmp dir: 	C:/Users/ThePhonkey/Desktop/ELO212/SESION7/.Xil/Vivado-4708-HP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 576 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\ThePhonkey\Desktop\ELO212\SESION7\SESION7.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/ThePhonkey/Desktop/ELO212/SESION7/SESION7.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/ThePhonkey/Desktop/ELO212/SESION7/SESION7.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 97 MB (+98858kb) [00:00:12]
+// [Engine Memory]: 633 MB (+512129kb) [00:00:12]
+// [GUI Memory]: 110 MB (+9060kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3301 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 662 MB. GUI used memory: 52 MB. Current time: 8/21/19, 1:49:06 AM CLST
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 688.594 ; gain = 107.918 
+// Project name: SESION7; location: C:/Users/ThePhonkey/Desktop/ELO212/SESION7; part: xc7a100tcsg324-1
+// [Engine Memory]: 700 MB (+36785kb) [00:00:16]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 502 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv)]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uart_rx_blk : uart_rx (uart_rx.sv)]", 18); // B (D, cp)
+// PAPropertyPanels.initPanels (uart_rx.sv) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uart_rx_blk : uart_rx (uart_rx.sv)]", 18, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uart_rx_blk : uart_rx (uart_rx.sv)]", 18, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), ctrlout : uart_tx_ctrl (uart_tx_ctrl.sv)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), ctrlout : uart_tx_ctrl (uart_tx_ctrl.sv)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+// [Engine Memory]: 748 MB (+14293kb) [00:09:07]
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), baud8_tick_blk : uart_baud_tick_gen (uart_baud_tick_gen.sv)]", 16, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), baud8_tick_blk : uart_baud_tick_gen (uart_baud_tick_gen.sv)]", 16, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), baud_tick_blk : uart_baud_tick_gen (uart_baud_tick_gen.sv)]", 17, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uartout : uart_tx (uart_tx.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uartout : uart_tx (uart_tx.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), baud8_tick_blk : uart_baud_tick_gen (uart_baud_tick_gen.sv)]", 16, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), baud8_tick_blk : uart_baud_tick_gen (uart_baud_tick_gen.sv)]", 16, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uartout : uart_tx (uart_tx.v)]", 15, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uartout : uart_tx (uart_tx.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uart_rx_blk : uart_rx (uart_rx.sv)]", 18, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), uart_rx_blk : uart_rx (uart_rx.sv)]", 18, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 35 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), ctrlout : uart_tx_ctrl (uart_tx_ctrl.sv)]", 14, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TOP (TOP.sv), ctrlout : uart_tx_ctrl (uart_tx_ctrl.sv)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 56 MB. Current time: 8/21/19, 2:19:09 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 52 MB. Current time: 8/21/19, 2:49:10 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 3:19:10 AM CLST
+// Elapsed time: 4962 seconds
+selectCodeEditor("uart_tx_ctrl.sv", 73, 356); // cl (w, cp)
+typeControlKey((HResource) null, "uart_tx_ctrl.sv", 'c'); // cl (w, cp)
+// Elapsed time: 113 seconds
+selectCodeEditor("uart_tx_ctrl.sv", 331, 318); // cl (w, cp)
+// Elapsed time: 83 seconds
+selectCodeEditor("uart_tx_ctrl.sv", 325, 228); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("uart_tx_ctrl.sv", 353, 221); // cl (w, cp)
+selectCodeEditor("uart_tx_ctrl.sv", 334, 223); // cl (w, cp)
+selectCodeEditor("uart_tx_ctrl.sv", 395, 218); // cl (w, cp)
+selectCodeEditor("uart_tx_ctrl.sv", 319, 221); // cl (w, cp)
+typeControlKey((HResource) null, "uart_tx_ctrl.sv", 'c'); // cl (w, cp)
+// Elapsed time: 88 seconds
+selectCodeEditor("uart_tx_ctrl.sv", 37, 283); // cl (w, cp)
+typeControlKey((HResource) null, "uart_tx_ctrl.sv", 'c'); // cl (w, cp)
+// Elapsed time: 286 seconds
+selectCodeEditor("uart_tx_ctrl.sv", 398, 317); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 3:49:10 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 4:19:10 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 4:49:11 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 5:19:11 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 5:49:11 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 6:19:12 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 6:49:12 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 7:19:12 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 7:49:12 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 8:19:13 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 8:49:13 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 9:19:13 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 9:49:13 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 10:19:14 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 10:49:14 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 11:19:14 AM CLST
+// HMemoryUtils.trashcanNow. Engine heap size: 748 MB. GUI used memory: 51 MB. Current time: 8/21/19, 11:49:15 AM CLST

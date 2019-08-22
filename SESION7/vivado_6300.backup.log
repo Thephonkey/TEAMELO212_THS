@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Aug 14 14:04:19 2019
+# Process ID: 6300
+# Current directory: C:/Users/ThePhonkey/Desktop/ELO212/SESION7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18124 C:\Users\ThePhonkey\Desktop\ELO212\SESION7\SESION7.xpr
+# Log file: C:/Users/ThePhonkey/Desktop/ELO212/SESION7/vivado.log
+# Journal file: C:/Users/ThePhonkey/Desktop/ELO212/SESION7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ThePhonkey/Desktop/ELO212/SESION7/SESION7.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 688.375 ; gain = 111.191
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 14 14:13:26 2019...

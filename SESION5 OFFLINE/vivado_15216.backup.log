@@ -1,0 +1,712 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue May  7 22:16:47 2019
+# Process ID: 15216
+# Current directory: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4240 C:\Users\ThePhonkey\Desktop\ELO211\SESION5 OFFLINE\SESION5 OFFLINE.xpr
+# Log file: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/vivado.log
+# Journal file: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 690.844 ; gain = 73.945
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May  7 22:17:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:59]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 780.195 ; gain = 24.961
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1
+
+launch_runs synth_1 -jobs 4
+[Tue May  7 22:21:35 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'SIMPRO' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj SIMPRO_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/BCDtoS.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BCDtoS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/CHOUTALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CHOUTALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DISTURN
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SHOWLED
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TIMEDIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TIMEDIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOFOUR.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOFOUR
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SIMPRO
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 9559e4dd4ace4866b66464159315ceec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SIMPRO_behav xil_defaultlib.SIMPRO xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 8 for port 'ins' [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sim_1/new/SIMPRO.sv:57]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.TIMEDIV_default
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.CHOUTALU
+Compiling module xil_defaultlib.TOFOUR
+Compiling module xil_defaultlib.DISTURN
+Compiling module xil_defaultlib.BCDtoS
+Compiling module xil_defaultlib.SHOWLED
+Compiling module xil_defaultlib.SIMPRO
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SIMPRO_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "SIMPRO_behav -key {Behavioral:sim_1:Functional:SIMPRO} -tclbatch {SIMPRO.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source SIMPRO.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'SIMPRO_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 789.922 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 794.336 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:03:45 ; elapsed = 00:05:00 . Memory (MB): peak = 794.336 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May  7 22:29:19 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+[Tue May  7 22:29:20 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May  7 22:32:51 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+[Tue May  7 22:32:51 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May  7 22:33:41 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+[Tue May  7 22:33:41 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May  7 22:46:03 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May  7 22:46:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Tue May  7 22:47:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue May  7 23:21:42 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 00:18:32 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 00:19:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 00:22:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 00:22:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2701.379 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.075 . Memory (MB): peak = 2701.379 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2701.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2826.840 ; gain = 350.277
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+CRITICAL WARNING: [HDL 9-806] Syntax error near "else". [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:55]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "endmodule". [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/DISTURN.sv:97]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:9]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:9]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "else". [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:11]
+[Wed May  8 00:33:03 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+CRITICAL WARNING: [HDL 9-806] Syntax error near "=". [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:9]
+CRITICAL WARNING: [HDL 9-806] Syntax error near ")". [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:9]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "else". [C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SHOWLED.sv:11]
+[Wed May  8 00:33:43 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 00:34:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 00:35:47 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 00:38:09 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 00:47:26 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 00:48:10 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 01:00:10 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 01:00:56 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 01:10:56 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 01:11:41 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 01:21:52 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 01:24:20 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 01:25:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 01:52:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 01:55:04 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 01:57:02 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 01:58:47 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 02:19:09 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+[Wed May  8 02:19:09 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 02:26:41 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 02:27:47 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 02:28:59 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 02:37:34 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 02:38:19 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 02:49:11 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 02:50:01 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 02:56:02 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+launch_runs synth_1 -jobs 4
+[Wed May  8 02:56:23 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 02:58:00 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 03:01:15 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 03:03:08 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 03:04:27 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 03:10:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 03:11:34 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210292708913A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 03:29:53 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+[Wed May  8 03:29:53 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292708913A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 14:52:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 14:53:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPDESIGN.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPNAME.sv} w ]
+add_files {{C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/TOPNAME.sv}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/NAMES.sv} w ]
+add_files {{C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/NAMES.sv}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SELECTNAME.sv} w ]
+add_files {{C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SELECTNAME.sv}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SELECTNAME.sv}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SELECTNAME.sv}}
+file delete -force {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.srcs/sources_1/new/SELECTNAME.sv}
+set_property top TOPNAME [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 16:05:39 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 16:06:25 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+[Wed May  8 16:06:25 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 16:09:27 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 16:10:24 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPNAME.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 16:17:58 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 16:19:12 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPNAME.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 16:25:22 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 16:26:40 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPNAME.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 16:31:31 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 16:32:41 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPNAME.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPNAME.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Wed May  8 16:39:33 2019] Launched synth_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/synth_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  8 16:40:34 2019] Launched impl_1...
+Run output will be captured here: C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ThePhonkey/Desktop/ELO211/SESION5 OFFLINE/SESION5 OFFLINE.runs/impl_1/TOPNAME.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292708913A
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  8 19:52:42 2019...
